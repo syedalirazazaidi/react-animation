@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./App.css";
 import alpa from "./images/a.jpg";
 import beta from "./images/b.jpg";
