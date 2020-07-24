@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import inter from "./images/net.jpg";
 import { Link } from "react-router-dom";
@@ -21,18 +21,18 @@ export const Header = () => {
     },
   });
   // const element = useRef(null);
-  const { element } = useWebAnimations({
-    keyframes: {
-      transform: ["translate(0px,0px)"],
-    },
-    timing: {
-      delay: 500, // Start with a 500ms delay
-      duration: 1000, // Run for 1000ms
-      iterations: Infinity,
-      direction: "alternate", // Run the animation forwards and then backwards
-      easing: "ease-in-out", // Use a fancy timing function
-    },
-  });
+  // const { element } = useWebAnimations({
+  //   keyframes: {
+  //     transform: ["translate(0px,0px)"],
+  //   },
+  //   timing: {
+  //     delay: 500, // Start with a 500ms delay
+  //     duration: 1000, // Run for 1000ms
+  //     iterations: Infinity,
+  //     direction: "alternate", // Run the animation forwards and then backwards
+  //     easing: "ease-in-out", // Use a fancy timing function
+  //   },
+  // });
 
   const [nav, setnav] = useState(false);
   const menutoggle = () => {
